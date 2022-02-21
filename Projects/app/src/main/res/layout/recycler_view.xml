@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:background="@color/main_ui_grey"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageitem"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsheading"
+        android:textColor="@color/orange"
+        android:textSize="15dp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+        android:padding="2dp"
+        android:text="Heading"
+        app:layout_constraintTop_toBottomOf="@+id/imageitem"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsinfo"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:maxLines="4"
+        android:textStyle="italic"
+        android:layout_margin="4dp"
+        android:padding="2dp"
+        android:text="Heading"
+        app:layout_constraintTop_toBottomOf="@+id/newsheading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
